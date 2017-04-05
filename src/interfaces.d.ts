@@ -7,3 +7,7 @@ interface IAppState {
 interface IAppProps {
   [propName: string]: any;
 }
+
+interface IAppRouter {
+  [propName: string]:any
+}

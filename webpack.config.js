@@ -6,15 +6,16 @@ module.exports = {
    app:'./src/index.tsx',
    vendor:['react','react-dom','director']
  },
- devtool: 'inline-source-map',  //inline-source-map
+ devtool: 'source-map',  //inline-source-map
  output: {
    filename: '[name].js',
-   path: __dirname + "/dist"
+   path: __dirname + "/dist",
+   publicPath: "/dist/",
+   pathinfo:true
  },
  devServer: {
-    contentBase: path.join(__dirname, "dist"),
     compress: true,
-    port: 9000
+    port: 9093
 },
  module: {
    rules: [{

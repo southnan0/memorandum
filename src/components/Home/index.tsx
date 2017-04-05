@@ -4,9 +4,9 @@ export interface HelloProps { }
 
 export const Home = (props: HelloProps) => (
     <div>
-        <h1>Hello home!</h1>
-        <a href="#/hello">Hello</a><br />
-        <a href="#/detail">detail</a><br />
-        <a href="#/search">search</a><br />
+        <h1>首页</h1>
+        <a href="#/hello">列表</a><br />
+        <a href="#/detail">详情</a><br />
+        <a href="#/search">搜索</a><br />
     </div>
 );

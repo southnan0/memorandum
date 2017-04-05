@@ -14,21 +14,13 @@ export class Detail extends React.Component<IAppProps,IAppState>{
         };
     }
 
-    onShowHistoryLength():void{
-        this.setState({
-            showHistoryLenth:true
-        })
-    }
-
     render(){
         const {showHistoryLenth} = this.state;
         return (
             <div>
-                <a href="javascript:history.back()">返回</a>
+                <a href="javascript:history.back()">返回(history.back)</a>
                 <a href="#/" style={{float:"right"}}>工作台</a>
-                <h1>This is detail page!</h1>
-                <button onClick={this.onShowHistoryLength.bind(this)}>show history length</button>
-                {showHistoryLenth && <p>{history.length}</p>}
+                <p>如果是history</p>
             </div>
         )
     }
